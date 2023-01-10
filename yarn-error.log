@@ -1,0 +1,209 @@
+Arguments: 
+  /Users/dima/.volta/tools/image/node/16.14.0/bin/node /Users/dima/.volta/tools/image/yarn/1.22.19/bin/yarn.js
+
+PATH: 
+  /Users/dima/.volta/tools/image/yarn/1.22.19/bin:/Users/dima/.volta/tools/image/node/16.14.0/bin:/Users/dima/.volta/bin:/Users/dima/google-cloud-sdk/bin:/usr/local/opt/node/bin:/Users/dima/Library/Python/3.6/bin:/Users/dima/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/dima/.volta/bin:/Users/dima/google-cloud-sdk/bin:/usr/local/opt/node/bin:/Users/dima/Library/Python/3.6/bin:/Users/dima/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin/:/usr/local/bin/
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/dima/figlinq/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /Users/dima/.volta/tools/image/yarn/1.22.19/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/Users/dima/.volta/tools/image/yarn/1.22.19/lib/cli.js:310:30)
+      at /Users/dima/.volta/tools/image/yarn/1.22.19/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "webapp",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Figlinq Single Page Application",
+    "main": "src/app.js",
+    "scripts": {
+      "clear-assets": "rm -rf assets/*",
+      "build": "yarn clear-assets; webpack --mode=production --color",
+      "build-dev": "yarn clear-assets; webpack --mode=development --color",
+      "watch": "yarn clear-assets; webpack --mode=development --color --progress -w",
+      "test": "jest test",
+      "test-single-thread": "jest test --maxWorkers=1",
+      "test-ci": "jest test --maxWorkers=2",
+      "test-update-snapshot": "jest test --updateSnapshot",
+      "test-watch": "jest --watch",
+      "test-coverage": "jest --coverage",
+      "jest-debug": "node --inspect-brk node_modules/.bin/jest --runInBand --colors --verbose",
+      "lint": "eslint src",
+      "lint-fix": "eslint src --fix",
+      "prettier": "prettier --write \"src/**/*.{js,scss}\"",
+      "prettier-test": "prettier -l \"src/**/*.{js,scss}\" && echo -e \"\\033[0;32m'PASS'\\033[0m\"",
+      "analyze-bundle": "webpack-bundle-analyzer assets/stats.json"
+    },
+    "keywords": [],
+    "author": "Plotly's Magnificent Team",
+    "license": "AGPL",
+    "devDependencies": {
+      "enzyme": "3.11.0",
+      "enzyme-adapter-react-16": "1.15.7",
+      "eslint": "8.29.0",
+      "eslint-config-prettier": "8.5.0",
+      "eslint-import-resolver-babel-module": "5.3.1",
+      "eslint-plugin-import": "2.26.0",
+      "eslint-plugin-react": "7.31.11",
+      "eslint-plugin-react-hooks": "4.6.0",
+      "jest-cli": "26.6.3",
+      "prettier": "2.8.1",
+      "react-test-renderer": "16.14.0",
+      "react-with-context": "2.0.0",
+      "tailwindcss-labeled-groups": "0.0.2",
+      "webpack-bundle-analyzer": "4.7.0"
+    },
+    "dependencies": {
+      "@babel/cli": "7.19.3",
+      "@babel/core": "7.20.5",
+      "@babel/eslint-parser": "7.19.1",
+      "@babel/node": "7.20.5",
+      "@babel/preset-env": "7.20.2",
+      "@babel/preset-react": "7.18.6",
+      "@figlinq/plotly-icons": "2.1.2",
+      "@figlinq/react-chart-editor": "0.48.0",
+      "@fullhuman/postcss-purgecss": "5.0.0",
+      "@headlessui/react": "1.7.5",
+      "@jspreadsheet/formula-pro": "2.8.1",
+      "@jspreadsheet/parser": "2.7.1",
+      "@jspreadsheet/render": "2.0.5",
+      "@jspreadsheet/search": "1.2.2",
+      "@loadable/component": "5.15.2",
+      "@mdi/js": "7.1.96",
+      "@mdi/react": "1.6.1",
+      "@progidev/jss-plugin-formula": "2.2.14",
+      "@reduxjs/toolkit": "1.9.1",
+      "@szhsin/react-menu": "3.3.0",
+      "assign-deep": "1.0.1",
+      "autoprefixer": "10.4.13",
+      "babel-loader": "9.1.0",
+      "babel-plugin-module-resolver": "4.1.0",
+      "capitalize": "2.0.4",
+      "classnames": "2.3.2",
+      "cookie": "0.5.0",
+      "crosslink-plotly.js": "github:plotly/crosslink-plotly.js#master",
+      "css-loader": "6.7.3",
+      "cssnano": "5.1.14",
+      "dompurify": "2.4.1",
+      "easymde": "2.18.0",
+      "escape-html": "1.0.3",
+      "fast-isnumeric": "1.1.4",
+      "hat": "0.0.3",
+      "highlight.js": "11.7.0",
+      "history": "5.3.0",
+      "humps": "2.0.1",
+      "image-js": "0.35.2",
+      "immutable": "3.8.2",
+      "imports-loader": "4.0.1",
+      "insane": "2.6.2",
+      "install": "0.13.0",
+      "is-plain-object": "5.0.0",
+      "jimp": "0.16.2",
+      "json-loader": "0.5.7",
+      "jsoneditor": "9.9.2",
+      "jspreadsheet": "9.2.6",
+      "marked": "1.2.7",
+      "mdi-react": "8.4.0",
+      "mini-css-extract-plugin": "2.7.2",
+      "moment": "2.29.4",
+      "moment-locales-webpack-plugin": "1.2.0",
+      "null-loader": "4.0.1",
+      "papaparse": "5.3.2",
+      "path-browserify": "1.0.1",
+      "plotly.js": "2.16.5",
+      "postcss": "8.4.20",
+      "postcss-import": "15.1.0",
+      "postcss-loader": "7.0.2",
+      "postcss-preset-env": "7.8.3",
+      "process": "0.11.10",
+      "prop-types": "15.8.1",
+      "qs": "6.11.0",
+      "raf": "3.4.1",
+      "ramda": "0.28.0",
+      "react": "16.14.0",
+      "react-color": "2.19.3",
+      "react-complex-tree": "1.1.11",
+      "react-dom": "16.14.0",
+      "react-draggable": "4.4.5",
+      "react-dropzone": "14.2.3",
+      "react-froala-wysiwyg": "4.0.16",
+      "react-html-parser": "2.0.2",
+      "react-immutable-proptypes": "2.2.0",
+      "react-markdown": "5.0.3",
+      "react-plotly.js": "2.6.0",
+      "react-redux": "8.0.5",
+      "react-router-dom": "6.4.5",
+      "react-simplemde-editor": "5.2.0",
+      "react-svgmt": "1.2.0",
+      "react-switch": "6.0.0",
+      "react-tabs": "4.2.1",
+      "react-virtualized-select": "3.1.3",
+      "redux-actions": "2.6.5",
+      "redux-logger": "3.0.6",
+      "redux-thunk": "2.4.2",
+      "sass": "1.56.2",
+      "sass-loader": "13.2.0",
+      "screenfull": "6.0.2",
+      "script-loader": "0.7.2",
+      "showdown": "2.1.0",
+      "simple-statistics": "7.8.0",
+      "tailwind-scrollbar": "2.0.1",
+      "tailwindcss": "3.2.4",
+      "tiff.js": "1.0.0",
+      "tinycolor2": "1.4.2",
+      "titlecase": "1.1.3",
+      "url": "0.11.0",
+      "url-parse": "1.5.10",
+      "uuid": "9.0.0",
+      "watchify": "4.0.0",
+      "webpack": "5.75.0",
+      "webpack-bundle-tracker": "1.8.0",
+      "webpack-cli": "5.0.1"
+    },
+    "browserslist": [
+      "defaults",
+      "not IE 11"
+    ],
+    "jest": {
+      "setupFilesAfterEnv": [
+        "./src/common/utils/test/setupJest.js"
+      ],
+      "roots": [
+        "src",
+        "__mocks__"
+      ],
+      "moduleNameMapper": {
+        "\\.(css|less)$": "<rootDir>/__mocks__/empty-module.js"
+      }
+    },
+    "sideEffects": [
+      "*.scss",
+      "*.css"
+    ],
+    "engines": {
+      "node": ">=16.0.0 <17.0.0",
+      "yarn": ">=1.20.0 <2.0.0"
+    },
+    "volta": {
+      "node": "16.14.0",
+      "yarn": "1.22.19"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

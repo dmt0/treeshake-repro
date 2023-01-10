@@ -1,0 +1,38 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "modules": false
+      }
+    ],
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@plotlyjs": "../../../plotlyjs/static/plotlyjs",
+          "@common": "./src/common",
+          "@files": "./src/files",
+          "@dashboards": "./src/dashboards",
+          "@text": "./src/text",
+          "@settings": "./src/settings",
+          "@share": "./src/share",
+          "@userops": "./src/userops",
+          "@workspace": "./src/workspace",
+          "@ui": "./src/ui",
+          "@figures": "./src/figures",
+          "_utils": "./src/utils"
+        }
+      }
+    ]
+  ]
+}
