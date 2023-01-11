@@ -18,3 +18,8 @@ Observe that the whole mdi.js is imported (at 2.6MB) even though only a few icon
 - webpack config has:
   - usedExports: true,
   - terser 3 passes
+
+
+# Solution
+
+Removing `devtool` setting fixes this.
