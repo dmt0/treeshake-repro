@@ -41,7 +41,8 @@ module.exports = (env, argv) => ({
       // Don't split out node modules into separate chunks
       cacheGroups: {defaultVendors: false},
     },
-    // usedExports: true,
+    providedExports: true,
+    usedExports: true,
     minimizer: [
       new TerserWebpackPlugin({
         terserOptions: {
