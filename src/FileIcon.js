@@ -1,13 +1,7 @@
 import PropTypes from 'prop-types';
 import Icon from '@mdi/react';
 import {
-  mdiNotebookOutline,
-  mdiFolder,
-  mdiChartBoxOutline,
-  mdiGrid,
-  mdiTableMultiple,
   mdiTextBoxOutline,
-  mdiViewDashboardOutline,
   mdiImageOutline,
   mdiFolderMultiple,
   mdiEarth,
@@ -15,15 +9,7 @@ import {
 
 // TODO connect with READABLE_TYPES
 const types = {
-  jupyter_notebook: {icon: mdiNotebookOutline},
-  fold: {icon: mdiFolder},
-  dash_app: {icon: mdiFolder},
-  plot: {icon: mdiChartBoxOutline},
-  grid: {icon: mdiGrid},
-  grid_alt: {icon: mdiGrid},
-  dashboard: {icon: mdiTableMultiple},
   html_text: {icon: mdiTextBoxOutline},
-  figure: {icon: mdiViewDashboardOutline},
   external_image: {icon: mdiImageOutline},
   my_files: {icon: mdiFolderMultiple},
   public_content: {icon: mdiEarth},
