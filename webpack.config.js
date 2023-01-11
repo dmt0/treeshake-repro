@@ -11,6 +11,8 @@ const ENV = process.env;
 module.exports = (env, argv) => ({
   devtool: env.production ? 'hidden-source-map' : ENV.WEBPACK_DEVTOOL || 'eval-source-map',
 
+  mode: 'production',
+  
   // Rarely updated NPM packages are split out into 'vendor' bundle for long term caching.
   // A lot of things are lazy-loaded. That is set up in Routes.js
   entry: {
